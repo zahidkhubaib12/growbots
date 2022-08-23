@@ -6,7 +6,6 @@ function App() {
   return (<>
     
     <Login/>
-    {/* <link to='/login'>link</link> */}
     </>
   )
   }
