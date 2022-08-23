@@ -3,7 +3,7 @@ import Email from "../../../Icons/Email.png";
 import Password from "../../../Icons/Password.png";
 import fb from "../../../Icons/fb.png";
 import google from "../../../Icons/google.png";
-import './login.css'
+import './login.scss'
 const Login=()=>{
 return (<>
     <div className='main'>
