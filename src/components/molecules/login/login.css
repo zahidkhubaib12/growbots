@@ -1,22 +1,22 @@
-.main {
-  text-align: center !important;
-  justify-content: center !important;
+.main{
+  text-align: center!important;
+  justify-content: center!important;
   min-height: 100vh;
   position: relative;
-  display: flex !important;
+  display: flex!important;
   background-color: rgb(236, 221, 221);
   background: url(https://demos.wrappixel.com/premium-admin-templates/bootstrap/xtreme-bootstrap/package/assets/images/big/auth-bg.jpg) no-repeat center center;
 }
 
-.sub-main {
+.sub-main{
   justify-content: center;
+  height: 450px;
   max-width: 400px;
   width: 90%;
   box-shadow: 11px 12px 13px 11px grey;
-  padding: 15px;
+  padding-top: 30px;
   background-color: white;
   margin: auto;
-  box-sizing: border-box;
 }
 
 div {
