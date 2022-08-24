@@ -1,6 +1,5 @@
 import Profile from "../../../Icons/logo.png";
 import React, { useState } from "react";
-
 import Email from "../../../Icons/Email.png";
 import Password from "../../../Icons/Password.png";
 import fb from "../../../Icons/fb.png";
@@ -13,7 +12,7 @@ const Login = () => {
   const [username, setUserName] = useState<string>();
   const [password, setPassword] = useState<string>();
 
-  // User Login info
+  // User Login info 
   const database = [
     {
       username: "user1",

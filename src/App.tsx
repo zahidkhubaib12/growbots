@@ -1,6 +1,7 @@
 import react from 'react-dom'
-import ForgetPassword from './components/molecules/forget/forgetPassword';
+import ForgetPassword from './components/molecules/forget/forgetPasswordmodule.';
 import Login from './components/molecules/login/login';
+import ChangePassword from './components/molecules/change/changePassword.module';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/forget" element={<ForgetPassword />} />
+          <Route path="/change" element={<ChangePassword />}/> 
         </Routes>
       </BrowserRouter>
     </>
