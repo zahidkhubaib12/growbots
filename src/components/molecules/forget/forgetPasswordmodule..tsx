@@ -1,4 +1,4 @@
-import Profile from "../../../Icons/logo.png";
+import Profile from "../../../Icons/growbots.png";
 import styles from './forgetPassword.module.scss'
 import { Link } from 'react-router-dom'
 
@@ -9,10 +9,10 @@ const ForgetPassword = () => {
                 <div className={styles.wrap}>
                     <div>
                         <span>
-                            <img src={Profile} alt="logo" />
+                            <img className={styles.logo} src={Profile} alt="logo" />
                         </span>
                         <h5 className={styles.mb_3}>Recover Password</h5>
-                        <span>Enter your Email and instructions will be sent to you!</span>
+                        <span className={styles.font}>Enter your Email and instructions will be sent to you!</span>
                     </div>
                     <div className={styles.mb_3}>
               <form>
