@@ -2,13 +2,17 @@ import Profile from "../../../Icons/growbots.png";
 import React, { useState } from "react";
 import Email from "../../../Icons/Email.png";
 import Password from "../../../Icons/Password.png";
+
+
 import "./login.scss";
-import { Link } from "react-router-dom";
+import { Link,Navigate   } from "react-router-dom";
 const Login = () => {
+  // let history = useHistory ();
   const [errorMessages, setErrorMessages] = useState({ name: "", message: "" });
   const [isSubmitted, setIsSubmitted] = useState(true);
   const [username, setUserName] = useState<string>();
   const [password, setPassword] = useState<string>();
+
 
   // User Login info 
   const database = [
@@ -38,7 +42,7 @@ const Login = () => {
     const userData = database.find((user) => {
       if(user.username == username && user.password == password){
         setIsSubmitted(false);
-
+       
       }
       else{
         // setErrorMessages({ name: "pass", message: errors.pass });
@@ -52,6 +56,7 @@ const Login = () => {
     if (userData) {
       if (userData.password !== pass.value) {
         // Invalid password
+       
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
         setIsSubmitted(true);
@@ -148,7 +153,7 @@ setIsSubmitted(false)
           </div>
         </div>
       ) : (
-        <h1 className="user">User is successfully logged in</h1>
+        <Navigate to="/dashboard" />
       )}
     </div>
   );

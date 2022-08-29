@@ -5,6 +5,7 @@ import ChangePassword from './components/molecules/change/changePassword';
 import SignUp from './components/molecules/signup/signup';
 import Resetpassword from './components/molecules/reset/resetpassword';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import DashBoard from './components/pages/home/dashboard';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/change" element={<ChangePassword />}/> 
           <Route path="/signup" element={<SignUp />}/>
           <Route path="/reset" element={<Resetpassword />}/>
+          <Route path="/dashboard" element={<DashBoard/>}/>
         </Routes>
       </BrowserRouter>
     </>
