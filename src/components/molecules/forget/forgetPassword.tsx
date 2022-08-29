@@ -52,6 +52,9 @@ const ForgetPassword = () => {
                     <div className={styles.this}>
                     <Link className={styles.this_input} to="/change">Change Password</Link>
                     </div>
+                    <div className={styles.this}>
+                    <Link className={styles.this_input} to="/reset">Reset Password via an email</Link>
+                    </div>
                   </div>
                 </div>
               </form>
