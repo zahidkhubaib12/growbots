@@ -1,5 +1,5 @@
 import react from 'react-dom'
-import ForgetPassword from './components/molecules/forget/forgetPasswordmodule.';
+import ForgetPassword from './components/molecules/forget/forgetPassword';
 import Login from './components/molecules/login/login';
 import ChangePassword from './components/molecules/change/changePassword.module';
 import SignUp from './components/molecules/signup/signup.module';

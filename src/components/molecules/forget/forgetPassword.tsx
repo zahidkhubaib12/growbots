@@ -1,8 +1,7 @@
-import Profile from "../../../Icons/logo.png";
-import React, { useState } from 'react';
-import './forgetPassword.scss'
-// const Parse = require('parse/dist/parse.min.js');
-
+import React,{useState} from "react";
+import Profile from "../../../Icons/growbots.png";
+import styles from './forgetPassword.module.scss'
+import { Link } from 'react-router-dom'
 const ForgetPassword = () => {
   const [email, setEmail] = useState('');
   // const doRequestPasswordReset = async function () {
@@ -20,38 +19,39 @@ const ForgetPassword = () => {
   // };
     return (
         <>
-            <div className='auth'>
-                <div className='wrap'>
-                    <div className='logo'>
-                        <span className="db">
-                            <img src={Profile} alt="logo" className="logo" />
+            <div className={styles.auth}>
+                <div className={styles.wrap}>
+                    <div>
+                        <span>
+                            <img className={styles.logo} src={Profile} alt="logo" />
                         </span>
-                        <h5 className="font-medium mb-3">Recover Password</h5>
-                        <span>Enter your Email and instructions will be sent to you!</span>
+                        <h5 className={styles.mb_3}>Recover Password</h5>
+                        <span className={styles.font}>Enter your Email and instructions will be sent to you!</span>
                     </div>
-                    <div className="row mt-3">
-              <form className="col-12">
-                <div className="mb-3 row">
-                  <div className="col-12">
-                    <input
-                     value={email}
-                     onChange={(event) => setEmail(event.target.value)}
-                      className="form-control form-control-lg"
+                    <div className={styles.mb_3}>
+              <form>
+                <div className={styles.mb_3}>
+                  <div>
+                    <input className={styles.inp}
+                    value={email}
                       type="email"
-                      placeholder="Username"
+                      placeholder="Email"
+                      onChange={(event) => setEmail(event.target.value)}
                     />
                   </div>
                 </div>
-                <div className="row mt-3">
-                  <div className="col-12">
+                <div>
+                  <div>
                     <button
-                      // onClick={() => doRequestPasswordReset()}
-                      className="btn"
+                      className={styles.btn}
                       type="submit"
-                      name="action"
+                       // onClick={() => doRequestPasswordReset()}
                     >
                       Reset
                     </button>
+                    <div className={styles.this}>
+                    <Link className={styles.this_input} to="/change">Change Password</Link>
+                    </div>
                   </div>
                 </div>
               </form>
