@@ -1,9 +1,7 @@
-import Profile from "../../../Icons/logo.png";
+import Profile from "../../../Icons/growbots.png";
 import React, { useState } from "react";
 import Email from "../../../Icons/Email.png";
 import Password from "../../../Icons/Password.png";
-import fb from "../../../Icons/fb.png";
-import google from "../../../Icons/google.png";
 import "./login.scss";
 import { Link } from "react-router-dom";
 const Login = () => {
@@ -79,11 +77,12 @@ setIsSubmitted(false)
       {isSubmitted ? (
         <div className="main">
           <div className="sub-main">
-            <div className="logo">
+            <div>
               <span className="db">
                 <img src={Profile} alt="logo" className="logo" />
               </span>
               <h5 className="font-medium mb-3">Sign in to Admin</h5>
+              <span className="styles_font">Please enter your user name and password to Login.</span>
             </div>
             <div className="row">
               <div className="col-12">
@@ -139,9 +138,9 @@ setIsSubmitted(false)
                   </div>
                   <div className="mt">
                     Don't have an account?
-                    <a href="" className="text">
+                    <Link className="text" to="/signup">
                       <b>Sign Up</b>
-                    </a>
+                    </Link>
                   </div>
                 </form>
               </div>

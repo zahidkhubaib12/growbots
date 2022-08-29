@@ -1,5 +1,5 @@
 import './changePassword.module.scss';
-import Profile from "../../../Icons/logo.png";
+import Profile from "../../../Icons/growbots.png";
 import styles from './changePassword.module.scss'
 
 const ChangePassword = () => {
@@ -9,10 +9,10 @@ const ChangePassword = () => {
         <div className={styles.sub_main}>
           <div>
             <span>
-              <img src={Profile} alt="logo" />
+              <img className={styles.logo} src={Profile} alt="logo" />
             </span>
             <h5>Change Password</h5>
-            <span>Your password must be of atleast 6 characters</span>
+            <span className={styles.font}>Your password must be of atleast 6 characters</span>
           </div>
           <form className={styles.form}>
             <div className={styles.input_form}>

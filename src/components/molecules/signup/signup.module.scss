@@ -15,13 +15,12 @@
         background-color: white;
         margin: auto;
         box-sizing: border-box;
-
-        .font {
+        
+        .font{
             color: #958282;
             font-style: italic;
         }
-
-        & .logo {
+        & .logo{
             width: 35px;
             height: auto;
         }
@@ -48,14 +47,12 @@
 .btn {
     width: 90%;
     height: 42px;
-    margin: 0px 10px 0px 10px;
-    background-color: lightpink;
-    border-radius: 6px;
-    border: aliceblue;
-    color: #c94e4e;
+    background-color: #7bbf2c;
+    border-radius: 5px;
+    color: white;
     font-weight: inherit;
     font-size: larger;
     box-sizing: border-box;
     margin: 5px;
-    border: 1px solid lightcoral;
+    border: 1px solid #62bb66;
 }
